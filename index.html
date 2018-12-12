@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="row margin-top-one">
+    <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+        <div class="panel panel-default ">
+            <div class="panel-heading"><b>Profile Info</b></div>
+            <div class="panel-body">
+                <form id="userForm">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="name">Name:</label>
+                                <input type="text"
+                                       placeholder="Enter Name"
+                                       class="form-control"
+                                       id="name" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="age">Age:</label>
+                                <input type="number"
+                                       placeholder="Enter Age"
+                                       class="form-control" id="age">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="age">Contact:</label>
+                                <input type="tel"
+                                       placeholder="Enter Contact"
+                                       class="form-control" id="contact">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="company">Company Name:</label>
+                                <input type="text"
+                                       placeholder="Enter Company Name"
+                                       class="form-control" id="company">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-md-6">
+                                <label for="currentProfile">Current Profile:</label>
+                                <input type="text"
+                                       placeholder="Enter Work Experience"
+                                       class="form-control" id="currentProfile">
+                            </div>
+                            <div class="col-md-6 col-md-6">
+                                <label for="workExperience">Work Experience:</label>
+                                <input type="number"
+                                       placeholder="Enter Work Experience"
+                                       class="form-control" id="workExperience">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-md-6">
+                                <label for="fatherName">Father Name:</label>
+                                <input type="text"
+                                       placeholder="Enter Father Name"
+                                       class="form-control" id="fatherName">
+                            </div>
+                            <div class="col-md-6 col-md-6">
+                                <label for="motherName">Mother Name:</label>
+                                <input type="text"
+                                       placeholder="Enter Mother Name"
+                                       class="form-control" id="motherName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="maritalStatus">Marital Status:</label>
+                                <select class="form-control" id="maritalStatus">
+                                    <option name="maritalS" value="Bachelor">Bachelor</option>
+                                    <option name="maritalS" value="Married">Married</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="gender">Gender:</label>
+                                <div class="radio" id="gender">
+                                    <label><input type="radio" name="optradio" value="Male">Male</label>
+                                    <label><input type="radio" name="optradio" value="Female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="address">Address:</label>
+                                <div id="address">
+                                    <input type="text"
+                                           placeholder="Line 1"
+                                           class="form-control" id="line1"><br>
+                                    <input type="text"
+                                           placeholder="Line 2"
+                                           class="form-control" id="line2"><br>
+                                    <input type="text"
+                                           placeholder="Area"
+                                           class="form-control" id="area"><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Contact</th>
+                        <th>Company</th>
+                        <th>Work Experience</th>
+                        <th>Parents</th>
+                        <th>Marital Status</th>
+                        <th>Address</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
